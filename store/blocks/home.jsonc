@@ -1,47 +1,58 @@
 {
   "store.home": {
     "blocks": [
-      "rich-text",
-      "flex-layout.row",
-      "shelf",
-      "slider-layout#home"
-    ]
-  },
-
-  "flex-layout.row":{
-    "children": [
-      "info-card#rethink",
-      "flex-layout.col"
-    ]
-  },
-
-  "flex-layout.col": {
-    "children": [
-      "image#electronics",
-      "image#major-appliance"
+      "responsive-layout.desktop#desktop",
+      "responsive-layout.mobile#mobile"
     ]
   },
   
- "info-card#rethink": {
+  "responsive-layout.desktop#desktop": {
+    "children": ["rich-text#desktop",
+      "image#desktop"
+    ]   
+  },
+  
+  "responsive-layout.mobile#mobile": {
+    "children": ["rich-text#mobile",
+      "image#mobile"
+    ]
+  },
+  
+  "rich-text#desktop": {
     "props": {
-      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/utensilios-cozinha-min.png",
-      "isFullModeStyle": true,
-      "headline": "Time to rethink your kitchen",
-      "callToActionText": "Discover",
-      "textPosition": "center"
+      "text": "# Your Coffee, Your Way \n ### New Coffee Makers Collection",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  
+  "rich-text#mobile": {
+    "props": {
+      "text": "### Your Coffee, Your Way \n #### New Coffee Makers Collection",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
     }
   },
 
-  "image#electronics": {
+  "image#desktop": {
     "props": {
-      "src": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/electronics_banner___25d69b49f8224b369375e68513b4d593.png",
-      "maxWidth": "100%"
+      "src": "https://appliancetheme.vteximg.com.br/arquivos/Responsive-Image-Desktop.jpg?q=1",
+      "maxWidth": "100%",
+      "link": {
+        "url": "/small-appliances/coffee-makers"
+      } ,
+      "alt": "Coffee Makers Collection"
     }
   },
-  "image#major-appliance": {
+  
+  "image#mobile": {
     "props": {
-      "src": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/major_appliance_banner___bb10093866a127345ddfbcca3efa5022.png",
-      "maxWidth": "100%"
+      "src": "https://appliancetheme.vteximg.com.br/arquivos/Responsive-Image-Mobile.jpg?q=1",
+      "maxWidth": "100%",
+      "link": {
+        "url": "/small-appliances/coffee-makers"
+      } ,
+      "alt": "Coffee Makers Collection"
     }
   }
 }
