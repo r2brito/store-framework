@@ -3,7 +3,8 @@
     "blocks": [
       "rich-text",
       "flex-layout.row",
-      "shelf"
+      "shelf",
+      "slider-layout#home"
     ]
   },
 
