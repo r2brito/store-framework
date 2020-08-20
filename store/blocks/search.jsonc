@@ -15,11 +15,7 @@
      "children": [
       "breadcrumb.search",
       "search-title.v2",
-      "total-products.v2",
-      "order-by.v2",
       "search-fetch-previous",
-      "search-content",
-      "filter-navigator.v3",
       "search-fetch-more"
      ]
    },
@@ -60,6 +56,10 @@
    },
 
    "gallery": {
-     "blocks": ["product-summary.shelf"]
+     "blocks": [
+        "product-summary.shelf",
+        "product-summary-sku-selector",
+        "product-summary-buy-button"
+      ]
    }
  }
