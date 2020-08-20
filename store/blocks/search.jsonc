@@ -13,12 +13,14 @@
 
    "search-result-layout.desktop": {
      "children": [
-       "breadcrumb.search",
-       "search-title.v2",
-       "flex-layout.row#top",
-       "search-fetch-previous",
-       "flex-layout.row#results",
-       "search-fetch-more"
+      "breadcrumb.search",
+      "search-title.v2",
+      "total-products.v2",
+      "order-by.v2",
+      "search-fetch-previous",
+      "search-content",
+      "filter-navigator.v3",
+      "search-fetch-more"
      ]
    },
 
@@ -56,7 +58,7 @@
    "search-content": {
    "blocks": ["gallery", "not-found"]
    },
-   
+
    "gallery": {
      "blocks": ["product-summary.shelf"]
    }
