@@ -19,6 +19,14 @@
             "header-row#main"
         ]
     },
+
+    "header-row#notification": {
+        "children": [
+            "header-spacer",
+            "rich-text#header",
+            "header-spacer"
+        ]
+    },
     
     "header-row#main": {
         "children": [
@@ -58,7 +66,6 @@
 
     "header-row#main-mobile": {
         "children": [
-            "drawer",
             "logo",
             "header-spacer",
             "minicart",
@@ -77,14 +84,6 @@
         "props": {
             "sticky": true
         }
-    },
-    
-    "header-row#notification": {
-        "children": [
-            "header-spacer",
-            "rich-text#header",
-            "header-spacer"
-        ]
     },
     
     "rich-text#header": {
