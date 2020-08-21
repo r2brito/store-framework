@@ -20,14 +20,6 @@
             "header-row#menu"
         ]
     },
-
-    "header-row#notification": {
-        "children": [
-            "header-spacer",
-            "rich-text#header",
-            "header-spacer"
-        ]
-    },
     
     "header-row#main": {
         "children": [
@@ -94,6 +86,14 @@
         "props": {
             "sticky": true
         }
+    },
+    
+    "header-row#notification": {
+        "children": [
+            "header-spacer",
+            "rich-text#header",
+            "header-spacer"
+        ]
     },
     
     "rich-text#header": {
